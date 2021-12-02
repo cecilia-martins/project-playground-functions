@@ -13,23 +13,25 @@ function calcArea(base, height) {
 }
 
 // Desafio 3
-function splitSentence(frase) {
+function splitSentence() {
   let espacos = [];
-  let separadas = []
+  let separadas = [];
   for (let posi = 0; posi < frase.length ; posi +=1) {
      if (frase[posi] === " ") {
       espacos.push(frase[posi])
     } else {
-      separadas.push(frase)
+      separadas.push(frase[posi])
     }
   }
-  console.log(separadas);
-}
+        console.log(splitSentence("pao com ovo"));
+} 
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
-}
+function concatName(arrayNames) {
+  let ultimo =  arrayNames[arrayNames.length -1];
+  let primeiro = arrayNames[0];
+  return ultimo + ", " + primeiro;
+} 
 
 // Desafio 5
 function footballPoints() {
