@@ -5,11 +5,11 @@ function compareTrue(para1, para2) {
   } else {
     return false;
   }
-} console.log(compareTrue(true, false));
+}
 
 // Desafio 2
-function calcArea() {
-  // seu código aqui
+function calcArea(base, height) {
+  return (base * height) /2;
 }
 
 // Desafio 3
