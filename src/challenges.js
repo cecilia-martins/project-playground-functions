@@ -1,6 +1,6 @@
 // Desafio 1
-function compareTrue() {
-  // seu código aqui
+function compareTrue(par1 , par2) {
+    //SÓ PRA DÁ COMMIT :)
 }
 
 // Desafio 2
