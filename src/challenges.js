@@ -70,7 +70,7 @@ function catAndMouse(mouse, cat1, cat2) {
 function fizzBuzz(arrayNumber) {
  let strings2Return = [];
 //  let strings2Return2 = [];
-  for (let posi = 0; posi < arrayNumber.length; posi +=1){
+  for (let posi = 0; posi < arrayNumber.length; posi +=1){ 
     if (arrayNumber[posi] % 3 === 0 && arrayNumber[posi] % 5 === 0) {
 
       strings2Return.push("fizzBuzz");
@@ -91,8 +91,10 @@ function fizzBuzz(arrayNumber) {
 }
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(paramString) {
+  let codificada = paramString.replace(/a/g, /e/g, /i/g, /o/g, /u/g, "1", "2", "3", "4", "5")
+  
+  return codificada;
 }
 function decode() {
   // seu código aqui
