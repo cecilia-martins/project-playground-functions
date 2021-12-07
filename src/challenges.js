@@ -92,12 +92,16 @@ function fizzBuzz(arrayNumber) {
 
 // Desafio 9
 function encode(paramString) {
-  let codificada = paramString.replace(/a/g, /e/g, /i/g, /o/g, /u/g, "1", "2", "3", "4", "5")
+  /* let codificada = paramString.replace(/a/g, /e/g, /i/g, /o/g, /u/g, "1", "2", "3", "4", "5") */
+  let codificada = paramString.replace(/a/g, "1").replace(/e/g, "2").replace(/i/g, "3").replace(/o/g, "4").replace(/u/g, "5")
   
   return codificada;
 }
-function decode() {
-  // seu código aqui
+function decode(outroParam) {
+  /* let decodificada = outroParam.replace(/1/g, /2/g, /3/g, /4/g, /5/g, "a", "e", "i", "o", "u") */
+  let decodificada = outroParam.replace(/1/g, "a").replace(/2/g, "e").replace(/3/g, "i").replace(/o/g, "4").replace(/u/g, "5")
+  
+  return decodificada;
 }
 
 module.exports = {
