@@ -71,17 +71,17 @@ function fizzBuzz(arrayNumber) {
  let strings2Return = [];
 //  let strings2Return2 = [];
   for (let posi = 0; posi < arrayNumber.length; posi +=1){
-  if (arrayNumber[posi] % 3 === 0) {
-      
-    strings2Return.push("fizz");
+    if (arrayNumber[posi] % 3 === 0 && arrayNumber[posi] % 5 === 0) {
+
+      strings2Return.push("fizzBuzz");
       
   } else if (arrayNumber[posi] % 5 === 0) {
       
     strings2Return.push("buzz");
     
-  } else if (arrayNumber[posi] % 3 === 0 && arrayNumber[posi] % 5 === 0) {
-
-    strings2Return.push("fizzBuzz")
+  } else if (arrayNumber[posi] % 3 === 0) {
+      
+    strings2Return.push("fizz");
     
   } else /* if (arrayNumber[posi] % 3 !== 0 && arrayNumber[posi] % 5 !== 0) */ {
     strings2Return.push("bug!")
