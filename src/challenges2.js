@@ -23,11 +23,24 @@ function generatePhoneNumber(telefone) {
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
   let medidaBaixo = "";
-  //A MEDIDA DE BAIXO TEM Q SER MENOR QUE A DOS OUTROS DOIS LADOS SOMADOS
-  //MEDIDA DE BAIXO VAI SER A C?
-  if ((lineA + lineB) < (lineA + lineC) && (lineB + lineC) < (lado)){
-    medidaBaixo = 
+  let outros2Lados = "";
+  // //A MEDIDA DE BAIXO TEM Q SER MENOR QUE A DOS OUTROS DOIS LADOS SOMADOS
+  // //MEDIDA DE BAIXO VAI SER A C?
+  // let lado1 = Math.abs(lineA + lineB);
+  // let lado2 = Math.abs(lineB + lineC);
+  // let lado3 = Math.abs(lineC + lineA);
+  if (lineA > lineB){
+    outros2Lados = lineA + lineC;
+    medidaBaixo = lineB;
   }
+  if((medidaBaixo < outros2Lados) && medidaBaixo > (Math.abs(medidaBaixo) !== Math.abs(outros2Lados))) {
+    return true;
+  } /* else if (medidaBaixo > outros2Lados && ){
+
+  } */ else {
+    return false;
+  }
+
 }
 
 // Desafio 13
