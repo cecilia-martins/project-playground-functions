@@ -13,17 +13,12 @@ function calcArea(base, height) {
 }
 
 // Desafio 3
-function splitSentence() {
-  let espacos = [];
-  let separadas = [];
-  for (let posi = 0; posi < frase.length ; posi +=1) {
-     if (frase[posi] === " ") {
-      espacos.push(frase[posi])
-    } else {
-      separadas.push(frase[posi])
-    }
-  }
-        console.log(splitSentence("pao com ovo"));
+function splitSentence(umaString) {
+  let arrayString = [];
+
+  
+
+  return arrayString;
 } 
 
 // Desafio 4
@@ -124,3 +119,4 @@ module.exports = {
   highestCount,
   splitSentence,
 };
+ 
