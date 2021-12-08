@@ -22,18 +22,29 @@ function generatePhoneNumber(telefone) {
 
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
-/*   let qualquerUmDosLados = "";
-  let outros2Lados = ""; */
-  if ((lineA + lineB) < lineC &&  lineC > ((lineA + lineC) !== lineC)) {
-    return true;
-  } else if((lineB + lineC) < lineA &&  lineA > ((lineB + lineC) !== lineA)) {
-    return true;
-  } else if((lineC + lineA) < lineB &&  lineB > ((lineC + lineA) !== lineB)) {
-    return true;
-  } else {
-    return false;
+  let qualquerUmDosLados = "";
+  let outros2Lados = "";
+  if ((lineA + lineB) < lineC) /* &&  lineC > ((lineA + lineC) !== lineC)) */ {
+    qualquerUmDosLados = lineC;
+    outros2Lados = lineA + lineB;
+  } 
+  else if ((lineB + lineC) < lineA) /* &&  lineA > ((lineB + lineC) !== lineA)) */ {
+    qualquerUmDosLados = lineA;
+    outros2Lados = lineB + lineC;
   }
+  else if ((lineC + lineA) < lineB) /* &&  lineB > ((lineC + lineA) !== lineB)) */ {
+    qualquerUmDosLados = lineB
+    outros2Lados = lineC + lineA;
+  }
+////////////////////////////////////////////////////////////////////////////////
 
+  if (qualquerUmDosLados > outros2Lados){
+    return false;
+  } else if (qualquerUmDosLados < (Math.abs(qualquerUmDosLados) !== Math.abs(outros2Lados))) {
+    return false;
+  } else /* if ((qualquerUmDosLados < outros2Lados) && )  */{
+    return true;
+  }
 }
 
 // Desafio 13
