@@ -16,7 +16,7 @@ function calcArea(base, height) {
 function splitSentence(umaString) {
   let arrayString = [];
 
-  
+  arrayString = umaString.split(" ");
 
   return arrayString;
 } 
