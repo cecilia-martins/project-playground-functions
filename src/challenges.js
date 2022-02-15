@@ -37,25 +37,8 @@ function footballPoints(wins, ties) {
 }
 
 // Desafio 6
-function highestCount(arrayNumbers) {
-  let maiorSeRep = [];  /* Math.max.apply(null, arrayNumbers); */
-  let qntSeRep = 0;
-  for (let posi = 0; posi < arrayNumbers.length; posi +=1){ 
-    
-    
-  if (arrayNumbers[0] > arrayNumbers[posi]) {
-    maiorSeRep.push(arrayNumbers[posi]);
-  }
-    /* .filter(maiorSeRep = arrayNumbers >= arrayNumbers); */
-  }
- /*  arrayNumbers.map(function(numero) {
-    maiorSeRep.push(numero === numero)
-  }) */
-    for (let i = 0; i < maiorSeRep.length; i +=1) {
-      qntSeRep += 1;
-    }
-
-  return qntSeRep.length;
+function highestCount(numbers) {
+//
 }
 
 // Desafio 7
@@ -73,27 +56,19 @@ function catAndMouse(mouse, cat1, cat2) {
 }
 
 // Desafio 8
-function fizzBuzz(arrayNumber) {
- let strings2Return = [];
-//  let strings2Return2 = [];
-  for (let posi = 0; posi < arrayNumber.length; posi +=1){ 
-    if (arrayNumber[posi] % 3 === 0 && arrayNumber[posi] % 5 === 0) {
-
-      strings2Return.push("fizzBuzz");
-      
-  } else if (arrayNumber[posi] % 5 === 0) {
-      
-    strings2Return.push("buzz");
-    
-  } else if (arrayNumber[posi] % 3 === 0) {
-      
-    strings2Return.push("fizz");
-    
-  } else /* if (arrayNumber[posi] % 3 !== 0 && arrayNumber[posi] % 5 !== 0) */ {
-    strings2Return.push("bug!")
-  }
- }
-  return strings2Return;
+function fizzBuzz(arrayN) {
+  let toReturn = [];
+  for (let i in arrayN) { 
+    if (arrayN[i] % 3 === 0 && arrayN[i] % 5 === 0) {
+        toReturn.push('fizzBuzz');
+    } else if (arrayN[i] % 5 === 0) {
+        toReturn.push('buzz');
+    } else if (arrayN[i] % 3 === 0) {
+        toReturn.push('fizz');
+    } else {
+        toReturn.push('bug!');
+    }
+  } return toReturn;
 }
 
 // Desafio 9
@@ -130,4 +105,3 @@ module.exports = {
   highestCount,
   splitSentence,
 };
- 

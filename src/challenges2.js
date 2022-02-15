@@ -1,7 +1,20 @@
 // Desafio 10
-function techList() {
-  // seu código aqui
+function techList(tech, name) {
+  if (tech.length === 0) {
+    return 'Vazio!';
+  }
+  let naOrdem = tech.sort();
+
+  const criandoObj = naOrdem.map((cadaTech) => {
+    const obj = {
+      tech: cadaTech,
+      name: name
+    };
+    return obj;
+  });
+  return criandoObj;
 }
+console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"], 'Lucas'));
 
 // Desafio 11
 function generatePhoneNumber(telefone) {
@@ -21,35 +34,31 @@ function generatePhoneNumber(telefone) {
 }
 
 // Desafio 12
-function triangleCheck(lineA, lineB, lineC) {
-  let qualquerUmDosLados = "";
-  let outros2Lados = "";
-  if ((lineA + lineB) < lineC) /* &&  lineC > ((lineA + lineC) !== lineC)) */ {
-    qualquerUmDosLados = lineC;
-    outros2Lados = lineA + lineB;
-  } 
-  else if ((lineB + lineC) < lineA) /* &&  lineA > ((lineB + lineC) !== lineA)) */ {
-    qualquerUmDosLados = lineA;
-    outros2Lados = lineB + lineC;
+function triangleCheck(aA, bB, cC) {
+  let qualquer = '';
+  let another = '';
+  if ((aA + bB) < cC) {
+    qualquer = cC;
+    another = aA + bB;
+  } else if ((bB + cC) < aA) {
+    qualquer = aA;
+    another = bB + cC;
+  } else if ((cC + aA) < bB) {
+    qualquer = bB;
+    another = cC + aA;
   }
-  else if ((lineC + lineA) < lineB) /* &&  lineB > ((lineC + lineA) !== lineB)) */ {
-    qualquerUmDosLados = lineB
-    outros2Lados = lineC + lineA;
-  }
-////////////////////////////////////////////////////////////////////////////////
-
-  if (qualquerUmDosLados > outros2Lados){
+  if (qualquer > another){
     return false;
-  } else if (qualquerUmDosLados < (Math.abs(qualquerUmDosLados) !== Math.abs(outros2Lados))) {
+  } else if (qualquer < (Math.abs(qualquer) !== Math.abs(another))) {
     return false;
-  } else /* if ((qualquerUmDosLados < outros2Lados) && )  */{
+  } else {
     return true;
   }
 }
 
 // Desafio 13
-function hydrate() {
-  // seu código aqui
+function hydrate(string) {
+  
 }
 
 module.exports = {
